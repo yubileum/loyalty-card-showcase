@@ -799,8 +799,20 @@ body {
 }
 
 .step-card-scan {
+    padding: 0;
+    overflow: hidden;
+    height: 160px;
     background: var(--primary-100);
     border: 1.5px solid var(--primary-100);
+}
+
+.step-illustration {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center 50%;
+    display: block;
+    border-radius: var(--radius-md);
 }
 
 .qr-icon {
@@ -1296,10 +1308,15 @@ body {
 
     .step-card {
         grid-template-columns: 52px 1fr;
+        grid-template-rows: auto auto;
     }
 
     .step-visual {
-        display: none;
+        grid-column: 1 / -1;
+    }
+
+    .step-illustration {
+        height: 160px;
     }
 
     .preview-grid {
@@ -1405,12 +1422,17 @@ body {
 
     .step-card {
         grid-template-columns: 48px 1fr;
-        padding: 24px;
-        gap: 20px;
+        grid-template-rows: auto auto;
+        padding: 20px;
+        gap: 16px;
     }
 
     .step-visual {
-        display: none;
+        grid-column: 1 / -1;
+    }
+
+    .step-illustration {
+        height: 140px;
     }
 
     .step-connector {
