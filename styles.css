@@ -942,3 +942,7 @@ h2,.section-heading h2 {
 @media(max-width:360px) {
   h1 { font-size:34px; }
 }
+.offer-card .trial-price { font-size:52px; margin-bottom:4px; }
+.trial-price span { font-size:17px; font-weight:500; letter-spacing:0; }
+.trial-capacity { color:#566447; font-size:16px; margin-bottom:20px; }
+.offer-card .button { width:100%; margin-top:15px; }

@@ -19,7 +19,7 @@ Run `python3 -m http.server 8000` in this directory and visit http://localhost:8
 
 Enquiries link to https://www.instagram.com/yubisa.ai/. Update both the link and accompanying handle/copy if the sales channel changes. The existing app demo link is https://loyalink-demo.vercel.app; verify that deployment separately before a campaign.
 
-Pricing and implementation scope are confirmed during consultation. Do not add numerical performance claims, customer counts, testimonials, or integration promises without evidence. The illustrated businesses are examples, not customer endorsements.
+The introductory offer is free for one month for up to 100 members, including card design and cashier SOP. Follow-on pricing is confirmed before the client decides to continue. The CTA opens Instagram to request onboarding; this landing page does not automatically provision trials or enforce membership limits. The illustrated businesses are examples, not customer endorsements.
 
 ## Files
 
