@@ -1,352 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="Loyalink%20Icon.png">
-    <title>Loyalink - Digital Loyalty Cards Made Simple</title>
-    <meta name="description"
-        content="Replace paper punch cards with digital loyalty cards. Your customers scan, collect stamps, and earn rewards automatically.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6428df">
+<title>Loyalink — Kartu Loyalty Digital untuk Bisnis Anda</title>
+<meta name="description" content="Beri pelanggan alasan untuk kembali. Loyalink membantu bisnis mengelola kartu stamp digital, member, dan reward tanpa pelanggan perlu download aplikasi. Konsultasikan program loyalty Anda.">
+<meta property="og:type" content="website"><meta property="og:locale" content="id_ID"><meta property="og:title" content="Loyalink — Pelanggan datang. Pelanggan kembali."><meta property="og:description" content="Kartu stamp digital dengan identitas bisnis Anda. Lihat simulasi dan diskusikan program loyalty yang cocok untuk bisnis Anda.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="Loyalink%20Icon.png"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <img src="Loyalink Logo Text.png" alt="Loyalink" class="logo-img">
-                </div>
-                <div class="nav-actions">
-                    <a href="#benefits" class="btn-text">Features</a>
-                    <a href="#how-it-works" class="btn-text">How It Works</a>
-                    <a href="https://loyalink-demo.vercel.app" target="_blank" class="btn-primary" id="navCta">Start
-                        Demo</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg-orb hero-orb-1"></div>
-        <div class="hero-bg-orb hero-orb-2"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-badge">
-                        <span class="badge-dot"></span>
-                        No app download needed
-                    </div>
-                    <h1 class="hero-title">
-                        Say Goodbye to<br>
-                        <span class="highlight">Paper Punch Cards</span>
-                    </h1>
-                    <p class="hero-description">
-                        Your customers show their QR code at checkout. The cashier stamps their digital card — no paper,
-                        no app, zero friction.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="https://loyalink-demo.vercel.app" target="_blank" class="btn-primary btn-large"
-                            id="heroCtaPrimary">
-                            <span>Start Demo</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </a>
-                        <button class="btn-ghost btn-large" id="heroCtaSecondary">See How It Works</button>
-                    </div>
-
-                </div>
-                <div class="hero-visual">
-                    <!-- Hero image -->
-                    <div class="iphone-mockup">
-                        <img src="Loyalty card mockup.png" alt="Loyalink loyalty card app screenshot"
-                            class="hero-mockup-img">
-                        <!-- Floating badges -->
-                        <div class="floating-badge badge-top">
-                            <span class="badge-icon">⚡</span>
-                            <span>Instant sync</span>
-                        </div>
-                        <div class="floating-badge badge-bottom">
-                            <span class="badge-icon">🎁</span>
-                            <span>Reward unlocked!</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits">
-        <div class="container">
-            <h2 class="section-title">Everything you need,<br>nothing you don't</h2>
-            <p class="section-subtitle">Built for small business owners who want results, not complexity.</p>
-
-            <div class="benefits-grid">
-                <div class="benefit-card" id="benefit1">
-                    <div class="benefit-icon-wrap">
-                        <div class="benefit-icon">📱</div>
-                    </div>
-                    <h3 class="benefit-title">No App Required</h3>
-                    <p class="benefit-description">Customers open their QR code and show it at checkout. Works instantly
-                        on any phone browser — iOS or Android.</p>
-                </div>
-
-                <div class="benefit-card" id="benefit2">
-                    <div class="benefit-icon-wrap">
-                        <div class="benefit-icon">☁️</div>
-                    </div>
-                    <h3 class="benefit-title">Never Lose Data</h3>
-                    <p class="benefit-description">All stamps sync to the cloud in real-time. No more lost cards, no
-                        more reprinting.</p>
-                </div>
-
-                <div class="benefit-card" id="benefit3">
-                    <div class="benefit-icon-wrap">
-                        <div class="benefit-icon">⚡</div>
-                    </div>
-                    <h3 class="benefit-title">Zero Learning Curve</h3>
-                    <p class="benefit-description">Add your logo, set your reward, and go live — no training or
-                        technical knowledge needed.</p>
-                </div>
-
-                <div class="benefit-card" id="benefit4">
-                    <div class="benefit-icon-wrap">
-                        <div class="benefit-icon">🎨</div>
-                    </div>
-                    <h3 class="benefit-title">Your Brand, Your Way</h3>
-                    <p class="benefit-description">Fully branded loyalty cards with your colors, logo, and reward tiers.
-                    </p>
-                </div>
-
-                <div class="benefit-card" id="benefit5">
-                    <div class="benefit-icon-wrap">
-                        <div class="benefit-icon">📊</div>
-                    </div>
-                    <h3 class="benefit-title">See Who's Coming Back</h3>
-                    <p class="benefit-description">Track visits, spot your top customers, and reward loyalty with data
-                        behind you.</p>
-                </div>
-
-                <div class="benefit-card" id="benefit6">
-                    <div class="benefit-icon-wrap">
-                        <div class="benefit-icon">💰</div>
-                    </div>
-                    <h3 class="benefit-title">Increase Repeat Visits</h3>
-                    <p class="benefit-description">Customers come back more to complete their cards — proven to boost
-                        retention by 30%.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <h2 class="section-title">Three steps to start<br>rewarding your customers</h2>
-
-            <div class="steps-container">
-                <div class="step-card" id="step1">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Customer Shows Their QR Code</h3>
-                        <p class="step-description">The customer opens their QR code and shows it to the cashier at
-                            checkout — no app needed.</p>
-                    </div>
-                    <div class="step-visual">
-                        <div class="step-visual-card step-card-scan">
-                            <img src="Scan%20Illustration.png" alt="Scan to collect" class="step-illustration">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-connector"></div>
-
-                <div class="step-card" id="step2">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Stamps Added Automatically</h3>
-                        <p class="step-description">Their digital card updates instantly. Progress syncs to the cloud
-                            across all devices.</p>
-                    </div>
-                    <div class="step-visual">
-                        <div class="step-visual-card step-card-progress">
-                            <div class="mini-progress-label">Your Progress</div>
-                            <div class="mini-progress-value">7<span>/10</span></div>
-                            <div class="mini-progress-bar">
-                                <div class="mini-progress-fill" style="width: 70%"></div>
-                            </div>
-                            <div class="mini-progress-msg">3 more stamps to your reward!</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step-connector"></div>
-
-                <div class="step-card" id="step3">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Reward Unlocked</h3>
-                        <p class="step-description">When they complete their card, they get their reward. Simple as
-                            that.</p>
-                    </div>
-                    <div class="step-visual">
-                        <div class="step-visual-card step-card-reward">
-                            <div class="reward-emoji">🎁</div>
-                            <div class="reward-name">Free Lychee Tea</div>
-                            <div class="reward-ready">✓ Ready to Use</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Preview -->
-    <section class="features-preview">
-        <div class="container">
-            <div class="preview-grid">
-                <div class="preview-content">
-                    <div class="section-label">What's Included</div>
-                    <h2 class="preview-title">Everything your customers need in one place</h2>
-                    <div class="feature-list">
-                        <div class="feature-item">
-                            <div class="feature-check">✓</div>
-                            <div>
-                                <div class="feature-name">Digital Loyalty Card</div>
-                                <div class="feature-desc">Track stamps and progress in real-time</div>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-check">✓</div>
-                            <div>
-                                <div class="feature-name">Voucher Wallet</div>
-                                <div class="feature-desc">Store and manage earned rewards</div>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-check">✓</div>
-                            <div>
-                                <div class="feature-name">Cloud Sync</div>
-                                <div class="feature-desc">Access from any device, anytime</div>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-check">✓</div>
-                            <div>
-                                <div class="feature-name">Custom Branding</div>
-                                <div class="feature-desc">Your logo and colors on every card</div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn-primary btn-large" style="margin-top: 40px;" id="featuresCta">Start Free Trial
-                        →</button>
-                </div>
-                <div class="preview-visual">
-                    <div class="app-preview-card">
-                        <div class="app-preview-header">
-                            <div class="app-logo">M</div>
-                            <div>
-                                <div class="app-name">Michael Yubileum</div>
-                                <div class="app-member">Member since 02/02/2026</div>
-                            </div>
-                            <div class="sync-badge">
-                                <span class="sync-dot"></span> Syncing
-                            </div>
-                        </div>
-                        <div class="app-progress">
-                            <div class="app-progress-label">Your Progress</div>
-                            <div class="app-progress-value">7<span>/10</span></div>
-                            <div class="app-progress-bar">
-                                <div class="app-progress-fill"></div>
-                            </div>
-                            <div class="app-progress-message">3 more stamps to get Free All days pass!</div>
-                        </div>
-                        <div class="app-stamps">
-                            <div class="stamp filled">★</div>
-                            <div class="stamp filled">★</div>
-                            <div class="stamp filled">★</div>
-                            <div class="stamp">○</div>
-                            <div class="stamp filled">★</div>
-                            <div class="stamp">○</div>
-                            <div class="stamp filled">★</div>
-                            <div class="stamp">○</div>
-                            <div class="stamp">○</div>
-                            <div class="stamp empty-dashed">☆</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-bg-orb cta-orb-1"></div>
-        <div class="cta-bg-orb cta-orb-2"></div>
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-badge">Free to get started</div>
-                <h2 class="cta-title">Start Rewarding Your<br>Customers Today</h2>
-                <p class="cta-description">Join hundreds of businesses using Loyalink to increase customer loyalty and
-                    repeat visits.</p>
-                <div class="cta-actions">
-                    <a href="https://loyalink-demo.vercel.app" target="_blank" class="btn-white btn-large"
-                        id="ctaBtn">Start Demo</a>
-                    <p class="cta-note">No credit card required • Set up in minutes</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <img src="Loyalink Logo Text.png" alt="Loyalink" class="logo-img">
-                    </div>
-                    <p class="footer-description">Digital loyalty cards made simple for small businesses. Replace paper
-                        with pixels.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Product</h4>
-                        <a href="#benefits">Features</a>
-                        <a href="#how-it-works">How It Works</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Support</h4>
-                        <a href="#">Help Center</a>
-                        <a href="#">Contact Us</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Company</h4>
-                        <a href="#">About</a>
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Loyalink. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+<a class="skip" href="#main">Lewati ke konten</a>
+<header class="header"><nav class="wrap nav" aria-label="Navigasi utama">
+<a href="#" class="brand" aria-label="Loyalink beranda"><span class="brand-wordmark" aria-hidden="true"></span></a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Buka navigasi">☰</button>
+<div id="nav-links" class="nav-links"><a href="#manfaat">Manfaat</a><a href="#cara-kerja">Cara kerja</a><a href="#demo">Coba kartu</a><a href="#faq">FAQ</a><a class="button small" href="#konsultasi">Diskusikan bisnis Anda <span aria-hidden="true">↗</span></a></div>
+</nav></header>
+<main id="main">
+<section class="hero wrap">
+<div class="hero-copy"><p class="eyebrow"><span class="dot"></span> KARTU LOYALTY DIGITAL UNTUK BISNIS ANDA</p>
+<h1>Pelanggan datang.<br> Pelanggan <span>kembali.</span></h1>
+<p class="lead">Ubah setiap kunjungan jadi alasan untuk datang lagi. Kartu stamp digital dengan brand Anda, langsung di HP pelanggan.</p>
+<div class="actions"><a class="button" href="#konsultasi">Buat program loyalty Anda <span aria-hidden="true">↗</span></a><a class="text-link" href="#demo">Coba simulasi kartu <span aria-hidden="true">↓</span></a></div>
+<div class="hero-notes"><span>✓ Tanpa download aplikasi</span><span>✓ Stamp & reward</span><span>✓ Identitas brand Anda</span></div>
+</div>
+<div class="hero-art" aria-label="Ilustrasi kartu loyalty digital untuk coffee shop">
+<div class="art-top"><span>SMALL GESTURES. LASTING CONNECTIONS.</span><span>↗</span></div>
+<div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+<div class="hero-card"><div class="card-head"><span class="cafe-symbol">☕</span><div><strong>Ruang Kopi</strong><small>YOUR DAILY LITTLE JOY</small></div><span class="card-label">MEMBER</span></div><p class="card-greeting">Kopi enak. Reward juga.</p><h2>Your next cup<br> is getting closer.</h2><div class="hero-stamps" aria-label="7 dari 10 stamp"><i>✳</i><i>✳</i><i>✳</i><i>✳</i><i>✳</i><i>✳</i><i>✳</i><i class="empty">8</i><i class="empty">9</i><i class="empty">♡</i></div><div class="card-foot"><span>7 / 10 stamp terkumpul</span><strong>1 kopi gratis ↗</strong></div></div>
+<div class="reward-note"><span class="reward-icon">✦</span><div><strong>Kunjungan kecil, apresiasi nyata.</strong><span>Reward yang bikin ingin kembali.</span></div></div>
+<div class="art-caption"><span>YOUR BRAND. THEIR FAVORITE CARD.</span><span>Contoh ilustrasi</span></div>
+</div></section>
+<div class="audience"><div class="wrap audience-inner"><p>Untuk bisnis yang tumbuh<br> <strong>bersama pelanggan setia.</strong></p><span>COFFEE SHOP</span><span>F&amp;B</span><span>SALON</span><span>LAUNDRY</span><span>RETAIL</span></div></div>
+<section id="manfaat" class="section wrap">
+<div class="section-heading"><div><p class="eyebrow">LEBIH DARI SEKADAR STAMP</p><h2>Transaksi selesai.<br> Hubungannya berlanjut.</h2></div><p>Program loyalty yang mudah dipahami pelanggan dan mudah dijelaskan tim Anda.</p></div>
+<div class="benefits"><article><span class="feature-icon">↻</span><h3>Beri alasan untuk kembali</h3><p>Tunjukkan progres menuju reward. Pelanggan tahu apa yang bisa mereka dapatkan di kunjungan berikutnya.</p><span class="feature-foot">DARI KUNJUNGAN → KEBIASAAN</span></article><article><span class="feature-icon">▤</span><h3>Kartu selalu di genggaman</h3><p>Buka kartu lewat browser HP. Tidak perlu membawa kartu kertas atau mengunduh aplikasi tambahan.</p><span class="feature-foot">DARI KERTAS → DIGITAL</span></article><article><span class="feature-icon">♡</span><h3>Kenali member Anda</h3><p>Kelola daftar member dan lihat riwayat stamp. Jadi awal untuk memahami pelanggan yang datang kembali.</p><span class="feature-foot">DARI TRANSAKSI → RELASI</span></article></div>
+</section>
+<section id="demo" class="demo-section"><div class="wrap demo-grid"><div class="demo-copy"><p class="eyebrow">BAYANGKAN UNTUK BISNIS ANDA</p><h2>Brand Anda.<br> Reward pilihan Anda.</h2><p>Pilih contoh bisnis, lalu tambahkan stamp. Rasakan bagaimana pelanggan melihat progres menuju reward.</p><div class="business-options" role="group" aria-label="Pilih contoh bisnis"><button class="selected" data-business="cafe" aria-pressed="true">Coffee shop</button><button data-business="salon" aria-pressed="false">Salon</button><button data-business="laundry" aria-pressed="false">Laundry</button></div><p class="demo-disclaimer">Simulasi interaktif, bukan akun member. Nama bisnis dan reward di sini hanya contoh.</p><a class="text-link" href="https://loyalink-demo.vercel.app" target="_blank" rel="noopener noreferrer">Jelajahi demo aplikasi <span aria-hidden="true">↗</span></a></div>
+<div class="demo-panel"><div class="demo-toolbar"><span><span class="dot"></span> PREVIEW KARTU MEMBER</span><button id="reset-demo" class="reset">Reset ↺</button></div><div class="interactive-card" id="interactive-card"><div class="demo-card-heading"><div><p class="card-label">LOYALTY CLUB</p><h3 id="demo-brand">Ruang Kopi</h3></div><span id="demo-symbol" class="demo-symbol" aria-hidden="true">☕</span></div><p class="member-name">Halo, pelanggan setia.</p><div class="demo-stamps" id="demo-stamps" aria-hidden="true"></div><div class="progress-line"><strong id="demo-progress">3 dari 5 stamp</strong><span id="demo-reward">Gratis 1 kopi pilihan</span></div><div class="progress-track" role="progressbar" aria-label="Progres stamp simulasi" aria-valuemin="0" aria-valuemax="5" aria-valuenow="3"><span id="progress-fill"></span></div><p id="demo-status" role="status" aria-live="polite">2 stamp lagi menuju kopi favorit Anda.</p></div><button class="button demo-button" id="add-stamp">+ Simulasikan kunjungan</button><p class="demo-hint">Di aplikasi, stamp ditambahkan oleh kasir setelah transaksi.</p></div>
+</div></section>
+<section id="cara-kerja" class="section wrap"><div class="section-heading"><div><p class="eyebrow">SEDERHANA DI MEJA KASIR</p><h2>Tiga langkah.<br> Satu alasan untuk balik lagi.</h2></div><p>Tidak perlu mengubah pengalaman belanja pelanggan. Cukup tambahkan apresiasi di akhirnya.</p></div><div class="steps"><article><span class="step-number">01</span><h3>Pelanggan buka kartu</h3><p>Member membuka kartu digital di browser HP dan menunjukkan QR code kepada kasir.</p><div class="step-tag">HP pelanggan</div></article><article><span class="step-number">02</span><h3>Kasir tambahkan stamp</h3><p>Kasir memindai QR member, lalu mengonfirmasi stamp sesuai aturan transaksi bisnis Anda.</p><div class="step-tag">Konfirmasi kasir</div></article><article><span class="step-number">03</span><h3>Reward siap dinikmati</h3><p>Saat checkpoint tercapai, voucher muncul di kartu. Pelanggan menunjukkannya kepada kasir untuk penukaran.</p><div class="step-tag">Kunjungan berikutnya</div></article></div></section>
+<section class="offer-section wrap" id="paket"><div class="offer-intro"><p class="eyebrow">MULAI DARI PROGRAM YANG TEPAT</p><h2>Reward yang menarik.<br> Tetap masuk akal<br> untuk bisnis.</h2><p>Kopi gratis, diskon layanan, atau bonus produk. Diskusikan mekanisme yang sesuai dengan margin dan kebiasaan pelanggan Anda.</p><a class="text-link" href="#konsultasi">Diskusikan kebutuhan & biaya ↗</a></div><div class="offer-card"><span class="pill">LOYALINK UNTUK BISNIS ANDA</span><h3>Satu program.<br> Terasa milik brand Anda.</h3><ul><li>Kartu digital dengan logo & warna brand</li><li>Stamp dan checkpoint reward</li><li>QR member untuk proses di kasir</li><li>Voucher reward untuk pelanggan</li><li>Daftar member & riwayat stamp</li></ul><div class="offer-note">Kebutuhan setup, kapasitas member, dan biaya dikonfirmasi saat konsultasi.</div></div></section>
+<section id="faq" class="section wrap faq-grid"><div><p class="eyebrow">SEBELUM MULAI</p><h2>Masih ada<br> pertanyaan?</h2><p>Kami bantu cari program yang cocok<br> untuk bisnis Anda.</p></div><div class="faqs"><details><summary>Pelanggan harus install aplikasi?<span>+</span></summary><p>Tidak. Kartu Loyalink dibuka lewat browser HP. Pelanggan cukup membuka kartu member dan menunjukkan QR code saat bertransaksi.</p></details><details><summary>Apakah harus punya alat khusus?<span>+</span></summary><p>Alur dasarnya menggunakan HP pelanggan dan perangkat kasir dengan kamera serta browser. Kamera memerlukan izin akses. Koneksi internet diperlukan untuk menyimpan dan memperbarui stamp.</p></details><details><summary>Bisa pakai logo dan reward bisnis saya?<span>+</span></summary><p>Bisa. Warna, logo, dan reward dapat disesuaikan. Saat konsultasi, kita tentukan aturan stamp dan reward agar jelas untuk pelanggan maupun kasir.</p></details><details><summary>Berapa biaya untuk mulai?<span>+</span></summary><p>Diskusikan jenis bisnis, jumlah member yang ditargetkan, serta kebutuhan setup Anda. Kami akan mengonfirmasi cakupan layanan dan biaya sebelum Anda memutuskan.</p></details><details><summary>Apakah langsung terhubung dengan POS atau WhatsApp?<span>+</span></summary><p>Integrasi POS dan otomatisasi WhatsApp tidak termasuk dalam alur dasar yang ditampilkan di sini. Sampaikan kebutuhan integrasi saat konsultasi agar bisa ditinjau terlebih dahulu.</p></details></div></section>
+<section id="konsultasi" class="contact-section"><div class="wrap contact-grid"><div><p class="eyebrow">MULAI DARI SATU PERCAKAPAN</p><h2>Jadikan kunjungan pertama<br> awal dari banyak cerita.</h2><p>Ceritakan bisnis Anda. Kita cari bentuk program loyalty yang paling pas.</p><a class="button light" href="https://www.instagram.com/yubisa.ai/" target="_blank" rel="noopener noreferrer">Diskusi via Instagram <span aria-hidden="true">↗</span></a><p class="contact-note">Kirim DM “LOYALINK” ke @yubisa.ai.</p></div><aside class="brief"><span>AGAR DISKUSINYA LANGSUNG TERARAH</span><h3>Cukup ceritakan:</h3><ol><li>Nama & jenis bisnis Anda</li><li>Perkiraan jumlah pelanggan/member</li><li>Reward yang ingin ditawarkan</li></ol><button id="copy-brief" class="copy-button">Salin contoh pesan ↗</button><p id="copy-status" role="status" aria-live="polite"></p><textarea id="brief-fallback" aria-label="Contoh pesan konsultasi, salin secara manual" hidden readonly>Halo, saya tertarik dengan LOYALINK.
+Nama & jenis bisnis:
+Target jumlah member:
+Reward yang ingin ditawarkan:
+Boleh diskusi demo, setup, dan biayanya?</textarea></aside></div></section>
+</main><footer class="wrap footer"><a href="#" class="brand">loyalink<span class="brand-dot">.</span></a><p>Small gestures. Lasting connections.</p><span>© <span id="year">2026</span> Loyalink</span></footer>
+</body></html>

@@ -1,78 +1,41 @@
-# Loyalink - Digital Loyalty Card Showcase Website
+# Loyalink landing page
 
-A stunning, modern showcase website for your digital loyalty card SaaS application.
+An Indonesian sales landing page for Loyalink digital loyalty cards. Built with plain HTML, CSS, and JavaScript; no build dependencies or backend required.
 
-## Features
+## Preview
 
-- 🎨 **Premium Design**: Modern, vibrant purple color scheme (#7C3AED) with smooth gradients and glassmorphism effects
-- ✨ **Smooth Animations**: Scroll-triggered animations, parallax effects, and micro-interactions
-- 📱 **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
-- 🚀 **Performance Optimized**: Clean, efficient code with smooth 60fps animations
-- 🎯 **SEO Ready**: Proper meta tags, semantic HTML, and optimized structure
+Run `python3 -m http.server 8000` in this directory and visit http://localhost:8000. Any static host can serve the repository root.
 
-## Sections
+## Page and interactions
 
-1. **Hero Section**: Eye-catching introduction with animated statistics and floating cards
-2. **Features Section**: 6 key features with hover effects and icons
-3. **How It Works**: 3-step process with visual demonstrations
-4. **Pricing**: 3 pricing tiers (Starter, Professional, Enterprise)
-5. **CTA Section**: Call-to-action for trial signup
-6. **Footer**: Complete footer with links and social media
+- Business-focused hero, benefits, cashier workflow, scope, FAQs, and enquiry section.
+- Clearly labelled illustrative loyalty cards for coffee shops, salons, and laundries.
+- Local stamp simulation with reward state, restart, and reset. It never calls the production API or stores customer data.
+- Mobile navigation with expanded state and Escape handling.
+- Copyable enquiry brief with a manual-copy fallback if clipboard access is unavailable.
+- Native expandable FAQs, visible keyboard focus, skip navigation, and reduced-motion support.
 
-## Setup
+## Sales configuration
 
-1. Simply open `index.html` in your browser
-2. No build process required - pure HTML, CSS, and JavaScript
+Enquiries link to https://www.instagram.com/yubisa.ai/. Update both the link and accompanying handle/copy if the sales channel changes. The existing app demo link is https://loyalink-demo.vercel.app; verify that deployment separately before a campaign.
 
-## Customization
+Pricing and implementation scope are confirmed during consultation. Do not add numerical performance claims, customer counts, testimonials, or integration promises without evidence. The illustrated businesses are examples, not customer endorsements.
 
-### Adding Images
+## Files
 
-Replace the placeholder images with your actual app screenshots:
+- `index.html`: page copy, metadata, navigation, and enquiry links.
+- `styles.css`: responsive design, brand colours, and accessibility states.
+- `script.js`: navigation, local demonstration, and enquiry clipboard handling.
+- Existing PNG brand and product assets are retained.
 
-- `hero-app-screen.png` - Main hero section app screenshot (recommended: 800x1600px)
-- Add images for the "How It Works" section steps
+Google Fonts is optional: system fonts remain available as fallbacks. No analytics, lead collection, or third-party application API is installed by this landing page.
 
-You can add images by placing them in the same directory and the JavaScript will automatically load them.
+## Branch and release
 
-### Colors
+Development branch: `dev/landing-page-refresh`. Review before merging into `main`. This change does not fix or deploy the separate Loyalink application/backend; its access-control and reward-flow findings need independent remediation before customer onboarding.
 
-The primary brand color is defined in `styles.css`:
+## Checks
 
-```css
---primary-500: #7C3AED;
---primary-600: #6D28D9;
---primary-700: #5B21B6;
-```
-
-Modify these variables to match your exact brand colors.
-
-### Content
-
-Edit `index.html` to update:
-- Company name and tagline
-- Feature descriptions
-- Pricing details
-- Contact information
-
-## Technologies Used
-
-- **HTML5**: Semantic markup
-- **CSS3**: Custom properties, Grid, Flexbox, animations
-- **Vanilla JavaScript**: Intersection Observer, smooth scroll, animations
-- **Google Fonts**: Inter font family
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## License
-
-This template is created for your digital loyalty card SaaS application.
-
----
-
-**Ready to launch?** Open `index.html` in your browser to see your stunning showcase website! 🚀
+- `node --check script.js`
+- Check local assets and fragment links.
+- Browser QA: desktop and 390px embedded mobile viewport; stamp progression, business switching, reset/restart, FAQ, menu, and clipboard fallback.
